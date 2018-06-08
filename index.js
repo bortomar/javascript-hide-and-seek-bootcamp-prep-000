@@ -3,5 +3,5 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  document.querySelector('#nested').removeChild(document.querySelector('#nested .target'));
+  document.querySelector('#nested .target').parentNode.removeChild(document.querySelector('#nested .target'));
 }
