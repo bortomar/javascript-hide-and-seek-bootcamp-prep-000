@@ -7,6 +7,6 @@ function nestedTarget() {
 }
 
 function deepestChild() {
-  /*var children =*/return [].concat(document.querySelectorAll('#grand-node *')).pop();
+  /*var children =*/return [].slice.call(document.querySelectorAll('#grand-node *'), 0).pop();
   //return children[children.length-1];
 }
